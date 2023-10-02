@@ -3,7 +3,7 @@
 {{ $page := .Page }}
 
 
-{{$fixedG := replaceRE `\n` "G" .}}
+{{$fixedG := replaceRE `\\n` "G" .}}
 {{$content = replace $content . $fixedG}}
 
 {{/* Escape slashes for Latex to fix line breaks */}}
