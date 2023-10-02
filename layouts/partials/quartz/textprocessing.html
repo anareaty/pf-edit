@@ -73,7 +73,7 @@
 
       {{ $linkContent := partial "quartz/popover-textprocessing" $curpage }}
       {{ $linkFileId := $curpage.File.UniqueID }}
-      {{ $popover := printf "<div id=\"popover-%s\" class=\"ppf\">%s</div>" $linkFileId $linkContent}}
+      {{ $popover := printf "<div id=\"popover-%s\" class=\"pp\">%s</div>" $linkFileId $linkContent}}
 
       {{$link := printf "<a id=\"link-%s\" href=\"%s%s\" rel=\"noopener\" class=\"internal-link\" data-src=\"%s\">%s</a>" $linkFileId $href $block $href $display}}
     
@@ -181,7 +181,7 @@
 
 
 
-<{{ $content | safeHTML }}
+{{ $content | safeHTML }}
 
 
   
