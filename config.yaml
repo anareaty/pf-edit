@@ -1,4 +1,4 @@
-baseURL: https://anareaty.github.io/amethyst-test
+baseURL: https://anareaty.github.io
 languageCode: ru-ru
 DefaultContentLanguage: ru
 
@@ -35,7 +35,7 @@ menu:
       weight: 1
 #  after:
 #    - name: "Github"
-#      url: "https://github.com/anareaty/anareaty.github.io/amethyst-test"
+#      url: "https://github.com/anareaty/anareaty.github.io"
 #      weight: 10
   social:
         - identifier: github
@@ -92,7 +92,7 @@ params:
   enableMermaid: true
 
   # Link to your Github repo
-  GitHubLink: https://github.com/anareaty/anareaty.github.io/amethyst-test
+  GitHubLink: https://github.com/anareaty/anareaty.github.io
 
   # Search (WIP)
   search:
@@ -132,7 +132,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/anareaty/anareaty.github.io/amethyst-test
+  BookRepo: https://github.com/anareaty/anareaty.github.io
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
