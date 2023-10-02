@@ -2,6 +2,10 @@
 {{ $raw := .Summary }}
 {{ $page := .Page }}
 
+
+{{$fixedG := replaceRE `\n` "G" .}}
+{{$content = replace $content . $fixedG}}
+
 {{/* Escape slashes for Latex to fix line breaks */}}
 {{$latex := findRE "(?:\\${2}([^\\$]+)\\${2})|(?:\\$([^\\$]*)\\$)" $content}}
 {{range $latex}}
