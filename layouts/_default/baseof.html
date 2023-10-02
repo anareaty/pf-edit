@@ -170,7 +170,7 @@
         document.getElementById(popoverId).classList.add('popover-hover');
         document.getElementById(popoverId).style.zIndex = popNum
         popNum++
-        document.getElementById(popoverId).style.top = e.clientY + 10 + 'px';
+        document.getElementById(popoverId).style.top = e.target.offsetTop + 50 + 'px';
         document.getElementById(popoverId).style.left = e.clientX - 250 + 'px';
      
         
