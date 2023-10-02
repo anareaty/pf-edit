@@ -3,8 +3,20 @@
 {{ $page := .Page }}
 
 
-{{$fixedG := replaceRE `\\n` "G" .}}
-{{$content = replace $content . $fixedG}}
+{{$fixedG1 := replaceRE `\n` "G" .}}
+{{$content = replace $content . $fixedG1}}
+
+{{$fixedG2 := replaceRE `\\n` "G" .}}
+{{$content = replace $content . $fixedG2}}
+
+{{$fixedG3 := replaceRE `\\\n` "G" .}}
+{{$content = replace $content . $fixedG3}}
+
+{{$fixedG4 := replaceRE `\\\\n` "G" .}}
+{{$content = replace $content . $fixedG4}}
+
+{{$fixedG5 := replaceRE `Я` "J" .}}
+{{$content = replace $content . $fixedG5}}
 
 {{/* Escape slashes for Latex to fix line breaks */}}
 {{$latex := findRE "(?:\\${2}([^\\$]+)\\${2})|(?:\\$([^\\$]*)\\$)" $content}}
