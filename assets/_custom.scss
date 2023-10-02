@@ -196,8 +196,8 @@ h1, h2, h3, h4, h5, h6 {
 article {
     width: 100%;
 /*    height: 100%;*/
-    display: flex;
-    flex-direction: column;  
+    /*display: flex;
+    flex-direction: column;  */
     margin: 0;
     padding: 10px 50px;
 }
@@ -215,12 +215,12 @@ article {
 }
 
 
-
+/*
 
 article > .content {
     flex: 1 100%;
 }
-
+*/
 
 footer {
     margin-top: 0;
@@ -703,3 +703,11 @@ a.article-summary {
 .book-page, .book-menu .book-menu-content, .book-toc .book-toc-content {
     padding: 1rem 1rem;
 }}
+
+
+
+.comment-link {
+    font-weight: 400;
+    color: var(--color-purple);
+    font-size: 0.9em;
+}

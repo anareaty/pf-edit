@@ -4,6 +4,7 @@
           </h2>
           {{ partial "docs/post-meta" . }}
           <p>
-              {{- partial "markdown-summary" . -}}<a class="more-link" href="{{ .RelPermalink }}">>></a>
+            {{partial "quartz/textprocessing" . }}
+          <p><a class="comment-link" href="{{ .RelPermalink }}#giscus">Оставить комментарий</a></p>
           </p>
       </article>

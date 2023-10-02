@@ -1,0 +1,6 @@
+{{ $content := partial "quartz/textprocessing" . }}
+{{ if ge ($content | len) 5000 }}
+  {{ $content = "xxx"}}
+{{end}}
+
+{{ $content | safeHTML}}
