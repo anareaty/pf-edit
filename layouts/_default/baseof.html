@@ -182,12 +182,12 @@
 
     let popovers = document.querySelectorAll('div.pp');
     popovers.forEach((pop) => {
-      pop.addEventListener('mouseover', (e) => {
+      pop.addEventListener('mouseenter', (e) => {
         let popoverId = e.target.id;
         document.getElementById(popoverId).classList.add('popover-hover-self');
       });
 
-      pop.addEventListener('mouseout', (e) => {
+      pop.addEventListener('mouseleave', (e) => {
         let popoverId = e.target.id;
         document.getElementById(popoverId).classList.remove('popover-hover-self');
       });
