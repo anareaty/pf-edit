@@ -159,11 +159,14 @@
         let linkId = e.target.id;
         let bareId = linkId.slice(5)
         let popoverId = "popover-" + bareId
-        document.getElementById(popoverId).classList.add('popover-hover');
+        setTimeout(() => {
+          document.getElementById(popoverId).classList.add('popover-hover');
         document.getElementById(popoverId).style.zIndex = popNum
         popNum++
         document.getElementById(popoverId).style.top = e.clientY + 10 + 'px';
         document.getElementById(popoverId).style.left = e.clientX - 250 + 'px';
+        }, 400);
+        
       });
 
       link.addEventListener('mouseleave', (e) => {
