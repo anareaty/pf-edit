@@ -169,7 +169,7 @@
         
       });
 
-      link.addEventListener('mouseleave', (e) => {
+      link.addEventListener('mouseout', (e) => {
         let linkId = e.target.id;
         let bareId = linkId.slice(5)
         let popoverId = "popover-" + bareId
@@ -187,7 +187,7 @@
         document.getElementById(popoverId).classList.add('popover-hover-self');
       });
 
-      pop.addEventListener('mouseleave', (e) => {
+      pop.addEventListener('mouseout', (e) => {
         let popoverId = e.target.id;
         document.getElementById(popoverId).classList.remove('popover-hover-self');
       });
