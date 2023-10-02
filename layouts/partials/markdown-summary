@@ -69,10 +69,6 @@
       {{$block := default "" (index $reference 1)}}
       {{$block = strings.TrimRight "/" (cond (eq $block "") $block (printf "#%s" $block)) | urlize | lower}}
       {{$href := strings.TrimRight "/" $curpage.RelPermalink}}
-      {{ $linkContent := partial "quartz/popover-textprocessing" $curpage }}
-      {{ $linkFileId := $curpage.File.UniqueID }}
-
-      {{ $popover := printf "<div id=\"popover-%s\" class=\"pp\">%s</div>" $linkFileId $linkContent}}
 
 
 
@@ -80,7 +76,8 @@
 
 
 
-      {{$link := printf "<a id=\"link-%s\" href=\"%s%s\" rel=\"noopener\" class=\"internal-link\" data-src=\"%s\">%s</a>%s" $linkFileId $href $block $href $display $popover}}
+
+      {{$link := printf "<a id=\"link-%s\" href=\"%s%s\" rel=\"noopener\" class=\"internal-link\" data-src=\"%s\">%s</a>" $linkFileId $href $block $href $display}}
       {{$content = replace $content . $link}}
     <!-- If path to existing file -->
     {{else if fileExists $relpath}}
