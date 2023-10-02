@@ -1,14 +1,14 @@
 {
   "name": "Paperless Forest",
   "short_name": "Paperless Forest",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/paperless/",
+  "scope": "/paperless/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/paperless/favicon.png",
       "sizes": "1024x1024"
     }
   ]
