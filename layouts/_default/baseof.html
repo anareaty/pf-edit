@@ -163,6 +163,8 @@
         let popoverId = "popover-" + bareId
 
         let top = getTop(e.target)
+        console.log("top " + top)
+        console.log("e.clientY " + e.clientY)
      
         document.getElementById(popoverId).classList.add('popover-hover');
         document.getElementById(popoverId).style.zIndex = popNum
