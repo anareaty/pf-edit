@@ -162,8 +162,8 @@
         document.getElementById(popoverId).classList.add('popover-hover');
         document.getElementById(popoverId).style.zIndex = popNum
         popNum++
-        document.getElementById(popoverId).style.transform = 'translateY('+(e.clientY)+'px)';
-        document.getElementById(popoverId).style.transform += 'translateX('+(e.clientX)+'px)';
+        document.getElementById(popoverId).style.left = e.clientY + 'px)';
+        document.getElementById(popoverId).style.top += e.clientX + 'px)';
       });
 
       link.addEventListener('mouseleave', (e) => {
