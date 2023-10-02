@@ -1,4 +1,6 @@
 baseURL: https://anareaty.github.io/amethyst-test
+languageCode: ru-ru
+DefaultContentLanguage: ru
 
 # Book configuration
 disablePathToLower: true
@@ -17,21 +19,41 @@ markup:
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 
+
+
+# Tags
+taxonomies:
+  tag: "tags"
+
+
+  
 # Sidebar menu additional links
 menu:
-  # before:
-  #   - name: "Sample"
-  #     url: "https://google.com"
-  #     weight: 10
-  after:
-    - name: "Github"
-      url: "https://github.com/64bitpandas/amethyst"
-      weight: 10
+  before:
+    - name: "Главная"
+      url: "/"
+      weight: 1
+#  after:
+#    - name: "Github"
+#      url: "https://github.com/anareaty/anareaty.github.io/amethyst-test"
+#      weight: 10
+  social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/anareaty/
+          params:
+              icon: github-fill
+        - identifier: telegram
+          name: Telegram
+          url: https://t.me/anareaty
+          params:
+              icon: telegram-line
+
 
 params:
 
-  name: Ben Cuan
-  title: 📓 Amethyst
+  name: Anareaty
+  title: Paperless Forest
 
   # OPTIONAL: custom favicon location
   # favicon: 'location/to/favicon.png'
@@ -53,7 +75,7 @@ params:
   enableCallouts: true
 
   # Show footer, including backlinks and graph view
-  enableFooter: true
+  enableFooter: false
 
   # whether backlinks of pages should show the context in which
   # they were mentioned
@@ -70,7 +92,7 @@ params:
   enableMermaid: true
 
   # Link to your Github repo
-  GitHubLink: https://github.com/64bitpandas/amethyst
+  GitHubLink: https://github.com/anareaty/anareaty.github.io/amethyst-test
 
   # Search (WIP)
   search:
@@ -80,20 +102,20 @@ params:
 
   # Site description and title
   description:
-    Notes, hosted by bencuan
+    Где растут идеи
 
   
   # Footer links
-  links:
-    - link_name: Website
-      link: https://bencuan.me
-    - link_name: Blog
-      link: https://blog.bencuan.me
+  # links:
+  #  - link_name: Website
+  #    link: https://bencuan.me
+  #  - link_name: Blog
+  #    link: https://blog.bencuan.me
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
-  BookToC: true
+  toc: true
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
@@ -110,7 +132,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/64bitpandas/amethyst
+  BookRepo: https://github.com/anareaty/anareaty.github.io/amethyst-test
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
