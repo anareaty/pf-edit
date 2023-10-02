@@ -155,7 +155,7 @@
     
     let internalLinks = document.querySelectorAll('a.internal-link');
     internalLinks.forEach((link) => {
-      link.addEventListener('mouseover', (e) => {
+      link.addEventListener('mouseenter', (e) => {
         let linkId = e.target.id;
         let bareId = linkId.slice(5)
         let popoverId = "popover-" + bareId
@@ -179,7 +179,7 @@
 
     let popovers = document.querySelectorAll('div.pp');
     popovers.forEach((pop) => {
-      pop.addEventListener('mouseover', (e) => {
+      pop.addEventListener('mouseenter', (e) => {
         let popoverId = e.target.id;
         document.getElementById(popoverId).classList.add('popover-hover-self');
       });
