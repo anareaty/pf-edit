@@ -75,7 +75,7 @@
       {{ $linkFileId := $curpage.File.UniqueID }}
       {{ $popover := printf "<div id=\"popover-%s\" class=\"pp\">%s</div>" $linkFileId $linkContent}}
 
-      {{$link := printf "<a id=\"link-%s\" href=\"%s%s\" rel=\"noopener\" class=\"internal-link\" data-src=\"%s\">%s</a>%s" $linkFileId $href $block $href $display $popover}}
+      {{$link := printf "<a id=\"link-%s\" href=\"%s%s\" rel=\"noopener\" class=\"internal-link\" data-src=\"%s\">%s%s</a>" $linkFileId $href $block $href $display $popover}}
     
 
 
