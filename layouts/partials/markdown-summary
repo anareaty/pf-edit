@@ -2,7 +2,7 @@
 {{ $raw := .Summary }}
 {{ $page := .Page }}
 
-
+{{ range .}}
 {{$fixedG1 := replaceRE `\n` "G" .}}
 {{$content = replace $content . $fixedG1}}
 
@@ -17,6 +17,8 @@
 
 {{$fixedG5 := replaceRE `Я` "J" .}}
 {{$content = replace $content . $fixedG5}}
+
+{{end}}
 
 {{/* Escape slashes for Latex to fix line breaks */}}
 {{$latex := findRE "(?:\\${2}([^\\$]+)\\${2})|(?:\\$([^\\$]*)\\$)" $content}}
