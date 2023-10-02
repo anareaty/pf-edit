@@ -49,17 +49,20 @@ header {
     header #search-icon {
         display: none !important;
     }
+
+
 }
+
 
 @media screen and (min-width: $mobile-breakpoint) {
     .book-icon {
         display: none;
     }
-
+/*
     .menu-search {
         display: none !important;
     }
-
+*/
     header #search-icon {
         display: block;
         margin-right: 20px;
