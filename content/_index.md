@@ -10,7 +10,7 @@ share: true
 menu: false
 blog: true
 toc: false
-collapse: true
+collapse: false
 weight: 1
 Статус: идея
 tags:

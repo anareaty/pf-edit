@@ -11,9 +11,9 @@ filename: pocketbook-collection-manager
 title: Менеджер коллекций для Покетбука
 share: true
 menu: true
-blog: true
-toc: true
-collapse: true
+blog: false
+toc: false
+collapse: false
 weight: 10
 Статус:
 ---
