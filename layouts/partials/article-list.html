@@ -1,4 +1,6 @@
- {{ $pages := where .Site.RegularPages "Params.blog" "==" true }}
+
+
+    {{ $pages := where .Site.RegularPages "Params.blog" "==" true }}
     {{ $pag := .Paginate ($pages) }}
 
       {{ range $pag.Pages.ByDate.Reverse  }}
@@ -37,3 +39,4 @@
             {{ end }}
     </nav>
 {{ end }}
+

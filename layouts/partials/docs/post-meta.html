@@ -1,12 +1,15 @@
 {{ with .Date }}
-  <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
+  <div class="article-date">{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</div>
 {{ end }}
 
 {{ range $taxonomy, $_ := .Site.Taxonomies }}
   {{ with $terms := $.GetTerms $taxonomy }}
   <div>
-    {{ range $n, $term := $terms }}{{ if $n }}, {{ end }}
-      <a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a>
+    {{ range $n, $term := $terms }}
+
+
+      
+      <a href="{{ $term.RelPermalink }}" class="{{if eq $taxonomy "tags"}}tag{{end}}">{{if eq $taxonomy "tags"}}#{{end}}{{ $term.Title }}</a>
     {{- end }}
   </div>
   {{ end }}

@@ -1,3 +1,5 @@
+
+
 {{ $bookSection := default "docs" .Site.Params.BookSection  }}
 {{ if eq $bookSection "*" }}
   {{ $bookSection = "/" }}{{/* Backward compatibility */}}
@@ -9,7 +11,8 @@
 
 {{ define "book-section-children" }}{{/* (dict "Section" .Section "CurrentPage" .CurrentPage) */}}
   <ul>
-    {{ range (where .Section.Pages "Params.bookhidden" "ne" true) }}
+    
+    {{ range (where .Section.Pages "Params.menu" "==" true) }}
       {{ if .IsSection }}
         <li {{- if .Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
           {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
@@ -28,9 +31,9 @@
   {{ $current := eq .CurrentPage .Page }}
   {{ $ancestor := .Page.IsAncestor .CurrentPage }}
 
-  {{ if .Page.Params.BookCollapseSection }}
+  {{ if .Page.Params.collapse }}
     <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
-    <label for="section-{{ md5 .Page }}" class="flex justify-between">
+    <label for="section-{{ md5 .Page }}" class="flex">
       <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
         {{- partial "docs/title" .Page -}}
       </a>
@@ -47,3 +50,4 @@
     <span class="book-menu-title">{{- partial "docs/title" .Page -}}</span>
   {{ end }}
 {{ end }}
+    
