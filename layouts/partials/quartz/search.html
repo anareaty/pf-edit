@@ -16,6 +16,6 @@
 {{ $js := resources.Get "quartz/js/full-text-search.js" | resources.Fingerprint "md5" | resources.Minify }}
 <script defer src="{{ $js.Permalink }}"></script>
 -->
-<script defer src="https://anareaty.github.io/static/quartz/js/full-text-search.js"></script>
+<script defer src="https://anareaty.github.io/quartz/js/full-text-search.js"></script>
 {{end}}
 
