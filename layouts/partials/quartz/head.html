@@ -1,6 +1,7 @@
 <!-- set data/config yaml file based on website language -->
 {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
 {{ $data := $.Site.Params }}
+{{ $baseURL := $.Site.BaseURL}}
 <!-- Meta tags -->
 <meta charset="UTF-8" />
 <meta
@@ -58,7 +59,7 @@
 <!-- {{ $popover := resources.Get "quartz/js/popover.js" | resources.Fingerprint "md5" |
 resources.Minify }}
 <script src="{{$popover.Permalink}}"></script> -->
-<script src="https://anareaty.github.io/popover.js"></script>
+
 
 
 <!-- Optional scripts -->
