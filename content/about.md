@@ -17,6 +17,3 @@ tags:
 ---
 
 Информация обо мне. 
-
-- [[../tech/obsidian/_index|Обсидиана]]
-- [[../tech/obsidian/_index|Обсидиана]]
