@@ -2,7 +2,7 @@
 {{ $raw := .Summary }}
 {{ $page := .Page }}
 
-{{ $content = $content | replaceRE `\n` `GGG` }}
+{{ $content = $content | replaceRE `\n` `\n\n` }}
 
 {{/* Escape slashes for Latex to fix line breaks */}}
 {{$latex := findRE "(?:\\${2}([^\\$]+)\\${2})|(?:\\$([^\\$]*)\\$)" $content}}
