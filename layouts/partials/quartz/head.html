@@ -62,6 +62,12 @@ resources.Minify }}
 
 
 
+{{ $popover := resources.Get "myscripts/popover.js" | resources.Fingerprint "md5" |
+resources.Minify }}
+<script src="{{$popover.Permalink}}"></script>
+
+
+
 <!-- Optional scripts -->
 {{ if $data.enableCodeBlockTitle | default $.Site.Params.enableCallouts }}
 {{ $codeTitle := resources.Get "quartz/js/code-title.js" | resources.Fingerprint "md5" | resources.Minify }}
