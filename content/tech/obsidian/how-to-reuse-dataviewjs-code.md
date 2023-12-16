@@ -40,6 +40,7 @@ dv.paragraph("Hello world!")
 
 \`\`\``dataviewjs`
 ```
+`` ``` ``
 await dv.view("scripts/my_code")
 ```
 \`\`\`
