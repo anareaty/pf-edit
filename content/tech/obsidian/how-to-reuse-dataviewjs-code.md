@@ -38,7 +38,7 @@ dv.paragraph("Hello world!")
 Затем в заметке пишем:
 
 ````
-<pre class="dataview dataview-error">Dataview: custom view not found for 'scripts/my_code.js' or 'scripts/my_code/view.js'.</pre>
+\<pre class="dataview dataview-error">Dataview: custom view not found for 'scripts/my_code.js' or 'scripts/my_code/view.js'.</pre>
 ````
 
 При этом весь код, содержащийся в файле `my_code.js` автоматически исполняется и рендерится. Но что если мы не хотим ничего сразу рендерить, а хотим вернуть какие-то функции или переменные, которые можно использовать позже? Это можно сделать следующим образом.
