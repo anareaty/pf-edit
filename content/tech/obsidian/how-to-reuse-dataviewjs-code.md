@@ -38,7 +38,7 @@ dv.paragraph("Hello world!")
 Затем в заметке, в блоке `dataviewjs` пишем:
 
 
-\`\`\`dataviewjs
+\`\`\``dataviewjs`
 ```
 await dv.view("scripts/my_code")
 ```
