@@ -62,7 +62,11 @@ this.myVar = "Hello world!"
 И в заметке в блоке `dataviewjs` пишем:
 
 ````js
+```​dataviewjs
+await dv.view("scripts/my_code")
 
+myFunc(myVar)
+```
 ````
 
 Подобным же образом можно переиспользовать любые функции или переменные.
