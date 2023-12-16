@@ -38,7 +38,7 @@ dv.paragraph("Hello world!")
 Затем в заметке пишем:
 
 ````
-\<pre class="dataview dataview-error">Dataview: custom view not found for 'scripts/my_code.js' or 'scripts/my_code/view.js'.</pre>
+
 ````
 
 При этом весь код, содержащийся в файле `my_code.js` автоматически исполняется и рендерится. Но что если мы не хотим ничего сразу рендерить, а хотим вернуть какие-то функции или переменные, которые можно использовать позже? Это можно сделать следующим образом.
@@ -56,7 +56,7 @@ this.myVar = "Hello world!"
 И в заметке пишем:
 
 ````
-<pre class="dataview dataview-error">Dataview: custom view not found for 'scripts/my_code.js' or 'scripts/my_code/view.js'.</pre>
+
 ````
 
 Подобным же образом можно переиспользовать любые функции или переменные.
@@ -78,7 +78,7 @@ this.myObject = {myFunc, myVar}
 И в заметке пишем:
 
 ````
-<pre class="dataview dataview-error">Dataview: custom view not found for 'scripts/my_code.js' or 'scripts/my_code/view.js'.</pre>
+
 ````
 
 У объекта `myObject` должно быть уникальное имя, не совпадающее ни с одним из свойств объекта `window`, но с одним объектом это легче проконтролировать, чем со множеством функций и переменных, которые мы можем использовать.
