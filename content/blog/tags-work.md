@@ -1,8 +1,7 @@
 ---
 date: 2023-09-29
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/blog
 filename: tags-work
 title: Теги теперь работают!
@@ -12,12 +11,15 @@ blog: true
 toc: false
 collapse: false
 weight: 10
-Статус: закончено
+Статус:
+  - закончено
 tags:
   - сайт
   - тэги
   - обновления
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Я добавила на сайт работающие тэги! 🥳
 

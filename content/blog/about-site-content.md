@@ -1,8 +1,7 @@
 ---
 date: 2023-09-27
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/blog
 filename: about-site-content
 title: О содержании сайта
@@ -12,10 +11,13 @@ blog: true
 toc: false
 collapse: false
 weight: 10
-Статус: закончено
+Статус:
+  - закончено
 tags:
   - сайт
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Я пока ещё раздумываю о том, что я хочу здесь писать.
 

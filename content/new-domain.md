@@ -1,8 +1,7 @@
 ---
 date: 2023-10-03
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content
 filename: new-domain
 title: У сайта новый домен! 😎
@@ -12,11 +11,14 @@ blog: true
 toc: false
 collapse: false
 weight: 10
-Статус: закончено
+Статус:
+  - закончено
 tags:
   - сайт
   - обновления
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Теперь у этого сайта есть свой собственный домен: paperless-forest.ru, взамен домена от Гитхаба.
 

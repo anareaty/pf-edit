@@ -4,7 +4,6 @@ date: 2023-04-18
   - Технологии
 type: page
 cssclasses: 
-aliases: 
 tags: 
 path: content/tech/mycode
 filename: pocketbook-collection-manager
@@ -15,8 +14,10 @@ blog: false
 toc: false
 collapse: false
 weight: 10
-Статус:
+Статус: 
+Блог: "[[Paperless Forest]]"
 ---
+
 
 У меня есть читалка Покетбук, и в ней можно сортировать книги по полочкам. Но массово это в самой читалке делать неудобно, так что я накодила вот такую прогу: [PocketBook Collection Manager](https://github.com/anareaty/PocketBook_Collection_Manager).
 

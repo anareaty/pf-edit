@@ -1,8 +1,7 @@
 ---
 date: 2023-09-11
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/blog
 filename: new-site
 title: Новый сайт! 🎉
@@ -12,12 +11,15 @@ blog: true
 toc: false
 collapse: false
 weight: 10
-Статус: закончено
+Статус:
+  - закончено
 tags:
   - Obsidian
   - обновления
   - сайт
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Я сделала этот сайт для того, чтобы публиковать здесь свои идеи и заметки.
 

@@ -1,8 +1,7 @@
 ---
 date: 2023-09-08
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/tech/obsidian
 filename: _index
 title: Obsidian
@@ -12,9 +11,14 @@ blog: false
 toc: false
 collapse: true
 weight: 10
-Статус: идея
+Статус:
+  - идея
 tags:
   - Obsidian
+aliases:
+  - Обсидиан
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Obsidian — приложение для заметок. 

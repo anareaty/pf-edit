@@ -1,8 +1,7 @@
 ---
 date: 2023-09-08
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/tech/obsidian
 filename: custom-checkboxes
 title: Кастомные чекбоксы в Obsidian
@@ -12,13 +11,15 @@ blog: false
 toc: false
 collapse: false
 weight: 10
-Статус: закончено
+Статус:
+  - закончено
 tags:
   - Obsidian
   - css
   - checkboxes
-summary: В [[./_index|Обсидиане]] очень удобно использовать свои собственные чекбоксы, например, такие:![[../../images/check.jpg|check.jpg]]Есть темы для Обсидиана, которые уже поддерживают некоторые из подобных чекбоксов, но можно назначить свои собственные при помощи css
+Блог: "[[Paperless Forest]]"
 ---
+
 
 В [[./_index|Обсидиане]] очень удобно использовать свои собственные чекбоксы, например, такие:
 ![[../../images/check.jpg|check.jpg]]

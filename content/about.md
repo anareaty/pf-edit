@@ -1,8 +1,7 @@
 ---
 date: 2023-09-09
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content
 filename: about
 title: Обо мне
@@ -12,8 +11,11 @@ blog: false
 toc: false
 collapse: false
 weight: 10
-Статус: идея
-tags:
+Статус:
+  - идея
+tags: 
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Информация обо мне. 

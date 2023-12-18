@@ -1,8 +1,7 @@
 ---
 date: 2023-09-08
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content/tech/mycode
 filename: _index
 title: Мои программы
@@ -12,6 +11,9 @@ blog: false
 toc: false
 collapse: true
 weight: 10
-Статус: закончено
-tags: []
+Статус:
+  - закончено
+tags: 
+Блог: "[[Paperless Forest]]"
 ---
+

@@ -1,8 +1,7 @@
 ---
 date: 2023-09-07
 type: page
-cssclasses:
-  - hide-props-for-blog
+cssclasses: []
 path: content
 filename: _index
 title: Paperless forest
@@ -12,10 +11,13 @@ blog: true
 toc: false
 collapse: false
 weight: 1
-Статус: идея
-tags:
+Статус:
+  - идея
+tags: 
+Блог: "[[Paperless Forest]]"
 ---
+
 
 Это мой новый сайт.
 
-Все обновления публикуются в [блоге](https://paperless-forest.ru/bloglink/), а все важные статьи можно найти в меню навигации.
+Все обновления публикуются в [блоге](https://anareaty.github.io/bloglink/), а все важные статьи можно найти в меню навигации.
