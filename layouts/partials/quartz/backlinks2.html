@@ -1,20 +1,19 @@
 {{ $dir := $.File.Dir}}
 
-<div>{{ $dir }}</div>
 
 {{$dir := replace $dir `\` `/`}}
 
-<div>{{ $dir }}</div>
+
 
 {{ $re := printf "%s%s%s" `\[\[../` $dir $.File.BaseFileName }}
 
-<div>{{ $re }}</div>
+
 
 {{if eq $re `\[\[..//_index`}}
   {{$re = `\[\[../_index`}}
 {{end}}
 
-<div>{{ $re }}</div>
+
 
 {{ $backlinks := slice }}
 {{ range .Site.AllPages }}
@@ -22,12 +21,14 @@
 {{ $filedir := .File.Dir}}
 {{$filedir := replace $filedir `\` `/`}}
 
+<div> FILEDIR </div>
 <div>{{ $filedir }}</div>
 
 {{$content := .RawContent}}
 {{$repl := printf `[[../%s` $filedir}}
 
-
+<div> REPL </div>
+<div>{{ $repl }}</div>
 
 {{$fixedContent := replace $content `[[./` $repl}}
 
@@ -38,7 +39,7 @@
    {{ end }}
 {{ end }}
 
-
+<div>BACKLINKS</div>
 <div>{{ $backlinks }}</div>
 
 <hr>
