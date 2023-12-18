@@ -10,7 +10,19 @@ const managePopovers = () => {
         let bareId = linkId.slice(5)
         let popoverId = "popover-" + bareId
      
-        document.getElementById(popoverId).classList.add('popover-hover');
+        //document.getElementById(popoverId).classList.add('popover-hover');
+
+
+
+
+        setTimeout(() => {
+          document.getElementById(popoverId).classList.add('popover-hover');
+        }, 600);
+
+
+
+
+
         document.getElementById(popoverId).style.zIndex = popNum
         popNum++
         document.getElementById(popoverId).style.top = e.target.offsetTop + 75 + 'px';
@@ -25,7 +37,7 @@ const managePopovers = () => {
         let popoverId = "popover-" + bareId
         setTimeout(() => {
           document.getElementById(popoverId).classList.remove('popover-hover');
-        }, 400);
+        }, 200);
       });
     });
 

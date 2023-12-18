@@ -24,3 +24,4 @@ tags:
 
 [[./tech/obsidian/_index|Obsidian]]
 
+
