@@ -1,7 +1,7 @@
 ---
 date: 2023-09-08
 type: page
-cssclasses: []
+cssclasses: 
 path: content/tech/obsidian
 filename: _index
 title: Obsidian
@@ -17,6 +17,7 @@ tags:
   - Obsidian
 aliases:
   - Обсидиан
+  - Obsidian
 Блог: "[[Paperless Forest]]"
 ---
 
