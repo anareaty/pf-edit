@@ -21,7 +21,7 @@
 
 .content a.internal-link {
     background-color: rgba(var(--color-blue-rgb), .1);
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .more-link {
