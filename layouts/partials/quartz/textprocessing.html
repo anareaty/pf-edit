@@ -88,7 +88,8 @@
 
 
     <!-- If path to existing file -->
-    {{else if fileExists $relpath}}
+    <!-- else if fileExists $relpath -->
+    {{else}}
       {{$splitpath := split $relpath "/"}}
       {{$dirname := first (sub (len $splitpath) 1) $splitpath | path.Join | urlize}}
       {{$basename := index (last 1 $splitpath) 0}}
@@ -117,13 +118,13 @@
 
     <!-- Broken path -->
 
-<!--
+
     {{else}}
       {{$link := printf "<a class=\"internal-link broken\">%s</a>" $display}}
       {{$content = replace $content . $link}}
     {{end}}
 
--->
+
 
 
 
