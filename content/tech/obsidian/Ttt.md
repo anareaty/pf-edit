@@ -30,6 +30,14 @@ Test image link
 
 [[../../images/Screenshot_17.jpg|Screenshot_17.jpg]]
 
+Test image link without extension
 
+[[../../images/Screenshot_17|Screenshot_17.jpg]]
 
+Test image link without name
 
+[[../../images/Screenshot_17.jpg]]
+
+Test image link bare
+
+[[../../images/Screenshot_17]]
