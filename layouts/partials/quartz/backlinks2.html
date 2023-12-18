@@ -28,7 +28,12 @@
 
 
 
+
 {{$fixedContent := replace $content `[[./` $repl}}
+{{$fixedContent := replace $fixedContent `..//` `../`}}
+
+
+
 
 
    {{ if and (findRE $re $fixedContent) (not (eq $re .File.BaseFileName)) }}
