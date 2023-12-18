@@ -17,7 +17,7 @@ const managePopovers = () => {
 
         setTimeout(() => {
           document.getElementById(popoverId).classList.add('popover-hover');
-        }, 600);
+        }, 1000);
 
 
 
@@ -52,6 +52,9 @@ const managePopovers = () => {
       pop.addEventListener('mouseleave', (e) => {
         let popoverId = e.target.id;
         document.getElementById(popoverId).classList.remove('popover-hover-self');
+        setTimeout(() => {
+          document.getElementById(popoverId).classList.remove('popover-hover');
+        }, 200);
       });
     });
 

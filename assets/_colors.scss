@@ -6,7 +6,9 @@
     --color-green: #A3BE8C;
     --color-cyan: #88C0D0;
     --color-blue: #81A1C1;
-    --color-purple: #AB9DC5;
+    --color-purple: #7777a3;
+    --color-purple-light: #a1a1c5;
+
     --color-pink: #D4B1D8;
 
     --color-salmon: #FC6E68;
@@ -22,7 +24,7 @@
     --color-green-rgb: 163, 190, 140;
     --color-cyan-rgb: 136,192,208;
     --color-blue-rgb: 129, 161, 193;
-    --color-purple-rgb: 171, 157, 197;
+    --color-purple-rgb: 119, 119, 163;
     --color-pink-rgb: 228,113,122;
 
 
@@ -66,7 +68,7 @@
     --outlinegray: var(--color-base-35);
     --million-progress-bar-color: var(--secondary);
     --highlighted: rgba(var(--color-orange-rgb), 0.2);
-    --header: var(--color-purple);
+    --header: var(--color-purple-light);
     --title: var(--color-base-80);
     --scrollbar: var(--color-base-25);
     --scrollbar-track: var(--color-base-20);
