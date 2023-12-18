@@ -21,14 +21,12 @@
 {{ $filedir := .File.Dir}}
 {{$filedir := replace $filedir `\` `/`}}
 
-<div> FILEDIR </div>
-<div>{{ $filedir }}</div>
+
 
 {{$content := .RawContent}}
 {{$repl := printf `[[../%s` $filedir}}
 
-<div> REPL </div>
-<div>{{ $repl }}</div>
+
 
 {{$fixedContent := replace $content `[[./` $repl}}
 
@@ -39,8 +37,7 @@
    {{ end }}
 {{ end }}
 
-<div>BACKLINKS</div>
-<div>{{ $backlinks }}</div>
+
 
 <hr>
 
