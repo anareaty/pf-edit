@@ -17,7 +17,7 @@ const managePopovers = () => {
 
         setTimeout(() => {
           document.getElementById(popoverId).classList.add('popover-hover');
-        }, 1000);
+        }, 2000);
 
 
 
