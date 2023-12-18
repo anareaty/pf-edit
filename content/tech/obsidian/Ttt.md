@@ -16,10 +16,20 @@ weight: 10
 tags: 
 ---
 
+
+Test link:
+
+[[./sidebar-images|sidebar-images]]
+
+
 Test markdown image
 
 ![[../../images/Screenshot_17.jpg|Screenshot_17.jpg]]
 
-Test wikilink
+Test image link
 
-[[../../images/Screenshot_17.jpg]]
+[[../../images/Screenshot_17.jpg|Screenshot_17.jpg]]
+
+
+
+
