@@ -716,3 +716,16 @@ a.article-summary {
     color: var(--color-purple);
     font-size: 0.9em;
 }
+
+
+
+.book-menu .book-menu-content::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+@media (max-width: 450px){
+.darkmode {
+    padding: 0 !important;
+}
+}
