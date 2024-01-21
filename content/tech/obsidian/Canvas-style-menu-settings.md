@@ -27,7 +27,7 @@ tags:
 Правда, по умолчанию там довольно мало настроек, но можно добавить свои настройки самостоятельно. Я долго ковырялась, но наконец настроила все правила, какие мне хотелось. Если вдруг кому тоже хочется делать в канвасе красивое, но неохота копаться в настройках и css, делюсь своим пресетом:
 1. Установите [плагин](https://github.com/michaellw/Obsidian-Canvas-Style-Menu) через BRAT. Если устанавливали раньше, обновите, там появились новые фишечки.
 2. Скачайте [этот файл](https://github.com/anareaty/obsidian-snippets/blob/5fcb72e94d55d0144c5823aba45721ef1021ea60/Canvas%20style%20menu%20preset/CSM%20Reaty%20settings.json) и положите его в папку `.obsidian/plugins/canvas-style-menu/packages`. Создайте, если её нет.
-3. Скачайте и подключите [сниппет](https://github.com/anareaty/obsidian-snippets/blob/main/Canvas%20style%20menu%20preset/csm%20styles.css).
+3. Скачайте и подключите [сниппет](https://github.com/anareaty/obsidian-snippets/blob/5fcb72e94d55d0144c5823aba45721ef1021ea60/Canvas%20style%20menu%20preset/csm%20styles.css).
 4. В настройках плагина нажмите кнопку Reload packages и выберите пакет CSM Reaty settings
 Стили вдохновлялись частично Canvas Candy, частично самим плагином, но кое-что я добавила от себя. Весь функционал можно посмотреть на картинке:
 
