@@ -26,8 +26,7 @@ tags:
 ## Последние записи
 
 ```dataview
-List without id
-dateformat(date, "dd.MM.yy") + " — " + file.link
+List
 Where share = true
 Sort date desc
 Limit 10
