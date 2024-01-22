@@ -1,6 +1,5 @@
 ---
 date: 2023-09-07
-type: page
 cssclasses: []
 path: content
 filename: _index
@@ -15,6 +14,7 @@ weight: 1
   - идея
 tags: 
 Блог: "[[Paperless Forest]]"
+Тип: "[[Публикации/Публикации]]"
 ---
 
 
@@ -22,4 +22,14 @@ tags:
 
 Все обновления публикуются в [блоге](https://paperless-forest.ru/bloglink/), а все важные статьи можно найти в меню навигации.
 
+
+## Последние записи
+
+```dataview
+List without id
+dateformat(date, "dd.MM.yy") + " — " + file.link
+Where share = true
+Sort date desc
+Limit 10
+```
 
