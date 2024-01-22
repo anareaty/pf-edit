@@ -21,14 +21,3 @@ tags:
 Это мой новый сайт.
 
 Все обновления публикуются в [блоге](https://paperless-forest.ru/bloglink/), а все важные статьи можно найти в меню навигации.
-
-
-## Последние записи
-
-```dataview
-List
-Where share = true
-Sort date desc
-Limit 10
-```
-
