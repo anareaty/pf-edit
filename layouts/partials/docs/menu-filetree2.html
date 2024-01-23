@@ -1,4 +1,4 @@
-{{ range (where .Section.Pages "Params.menu" "==" true) }}
+{{ range (where .Site.Pages "Params.menu" "==" true) }}
   {{if .Params.parent}}
     <h2>{{.Params.parent}}</h2>
   {{end}}
