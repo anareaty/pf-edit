@@ -1,7 +1,7 @@
 :root {
   --callout-summary: #00b0ff;
   --callout-summary-accent: #7fd7ff;
-  --callout-bug: #f50057;
+  --callout-bug: rgba(var(--color-red-rgb), 0.5);
   --callout-bug-accent: #ff7aa9;
   --callout-danger: #ff1744;
   --callout-danger-accent: #ff8aa1;
