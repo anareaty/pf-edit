@@ -23,8 +23,9 @@ tags:
 Все обновления публикуются в [блоге](https://paperless-forest.ru/bloglink/), а все важные статьи можно найти в меню навигации.
 
 
-## Последние записи
+### Последние записи
 
+- 23.10.24 — [[./change-site-structure|Изменение структуры сайта]]
 - 21.10.24 — [[./Canvas-style-menu-settings|Пресет настроек для плагина Canvas Style Menu]]
 - 18.120.23 — [[./blog/news-18-12-23|Обновления на сайте]]
 - 17.120.23 — [[./sidebar-images|Css для картинок в сайдбаре]]
@@ -34,6 +35,5 @@ tags:
 - 29.90.23 — [[./blog/tags-work|Теги теперь работают!]]
 - 27.90.23 — [[./blog/about-site-structure|О структуре сайта]]
 - 27.90.23 — [[./blog/about-site-content|О содержании сайта]]
-- 19.90.23 — [[./sync-syncthing-without-internet|Синхронизация через Syncthing без интернета]]
 
 
