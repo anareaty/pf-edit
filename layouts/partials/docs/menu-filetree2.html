@@ -31,6 +31,8 @@
 {{define "page-link"}}
 {{ $page := .page }}
 {{ $current := eq $page.Permalink .currentPage }}
+
+<div>{{$page.Permalink}}</div>
 {{ if $current }}
 <div>Current</div>
 {{end}}
