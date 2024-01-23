@@ -31,7 +31,7 @@
 {{ $current := eq .page.Permalink .currentPage }}
 
   {{ if .page.Params.collapse }}
-    <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" checked/>
+    <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" checked/>
     <label for="section-{{ md5 .page }}" class="flex">
       <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
         {{- partial "docs/title" .page -}}
