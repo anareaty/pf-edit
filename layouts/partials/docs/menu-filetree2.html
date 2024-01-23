@@ -33,6 +33,7 @@
 {{ $current := eq $page.Permalink .currentPage }}
 
 <div>{{$page.Permalink}}</div>
+<div>{{.currentPage}}</div>
 {{ if $current }}
 <div>Current</div>
 {{end}}
