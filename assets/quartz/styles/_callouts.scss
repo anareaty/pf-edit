@@ -82,7 +82,7 @@ blockquote[class*="-callout"] {
   padding-bottom: 0;
   color: var(--dark);
   background-color: var(--lightgray);
-  border-left: 6px solid var(--primary) !important;
+/*  border-left: 6px solid var(--primary) !important;*/
   & > p {
     border-top-right-radius: 5px;
     padding: 0.5em 1em;
@@ -149,7 +149,7 @@ $svgs: map-merge($svgs, ($warning: url("data:image/svg+xml,%3Csvg aria-hidden='t
 @each $type in $types {
   @each $s in $type {
     blockquote.#{$s}-callout {
-      border-left: 6px solid var(--callout-#{getstr($type)}) !important;
+    /*  border-left: 6px solid var(--callout-#{getstr($type)}) !important;*/
       & > p:first-child {
         background-color: var(--callout-#{getstr($type)}-accent) !important;
         &::after {
