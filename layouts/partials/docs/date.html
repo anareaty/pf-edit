@@ -3,4 +3,4 @@
   Usage: partial "docs/date" (dict "Date" .Date "Format" .Site.Params.BookDateFormat)
 -->
 
-{{- return (dateFormat "02 January 2006 15:04" .Params.publishDate.Local) -}}
+{{- return (dateFormat "02 January 2006 15:04" .PublishDate) -}}
