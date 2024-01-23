@@ -1,5 +1,6 @@
 ---
 date: 2023-09-08
+publishDate: 2023-09-08T00:00:00
 cssclasses: 
 path: content
 filename: obsidian

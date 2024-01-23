@@ -1,5 +1,6 @@
 ---
 date: 2023-09-11
+publishDate: 2023-09-11T00:00:00
 cssclasses: 
 path: content/blog
 filename: new-site

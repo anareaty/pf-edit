@@ -1,5 +1,6 @@
 ---
 date: 2023-09-09
+publishDate: 2023-09-09T00:00:00
 cssclasses: 
 path: content
 filename: about

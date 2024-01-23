@@ -1,8 +1,8 @@
 ---
 date: 2023-09-19
+publishDate: 2023-09-19T00:00:00
 cssclasses:
-  - hide-props-for-blog
-  - show-properties
+  - page
 path: content
 filename: sync-syncthing-without-internet
 title: Синхронизация через Syncthing без интернета

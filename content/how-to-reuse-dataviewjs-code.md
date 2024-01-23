@@ -1,5 +1,6 @@
 ---
 date: 2023-12-16
+publishDate: 2023-12-16T00:00:00
 cssclasses:
   - page
 path: content

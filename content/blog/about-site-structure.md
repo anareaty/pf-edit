@@ -1,5 +1,6 @@
 ---
 date: 2023-09-27
+publishDate: 2023-09-27T00:00:00
 cssclasses: 
 path: content/blog
 filename: about-site-structure

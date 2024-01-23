@@ -1,5 +1,6 @@
 ---
 date: 2023-09-07
+publishDate: 2023-09-07T00:00:00
 cssclasses: 
 path: content
 filename: _index
@@ -27,6 +28,7 @@ tags:
 
 ### Последние записи
 
+- 23.01.24 — [[./blog/news-23-01-24|Ещё немного обновлений на сегодня]]
 - 23.01.24 — [[./change-site-structure|Изменение структуры сайта]]
 - 21.01.24 — [[./Canvas-style-menu-settings|Пресет настроек для плагина Canvas Style Menu]]
 - 18.12.23 — [[./blog/news-18-12-23|Обновления на сайте]]
@@ -36,6 +38,5 @@ tags:
 - 02.10.23 — [[./blog/news-02-10-23|Обновление сайта]]
 - 29.09.23 — [[./blog/tags-work|Теги теперь работают!]]
 - 27.09.23 — [[./blog/about-site-content|О содержании сайта]]
-- 27.09.23 — [[./blog/about-site-structure|О структуре сайта]]
 
 

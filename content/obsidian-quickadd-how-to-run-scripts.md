@@ -1,5 +1,6 @@
 ---
 date: 2023-05-26
+publishDate: 2023-05-26T00:00:00
 cssclasses:
   - hide-props-for-blog
 path: content

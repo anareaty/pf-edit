@@ -1,5 +1,6 @@
 ---
 date: 2023-10-03
+publishDate: 2023-10-03T00:00:00
 cssclasses: 
 path: content/blog
 filename: new-domain
