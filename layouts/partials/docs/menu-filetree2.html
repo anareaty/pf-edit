@@ -4,10 +4,14 @@
 {{ range $pages }}
   {{- if .Params.parent}}
   
-    <h2>{{ .Params.title }}</h2>
+    {{ template "section-children" . }}
 
-<h3>{{ .Params.parent }}</h3>
   {{end}}
+{{end}}
+
+
+{{ define "section-children" }}
+   <h2>{{ .Params.title }}</h2>
 {{end}}
 
 
@@ -43,7 +47,7 @@
 
 
 
--->
+
 
 
 
@@ -72,3 +76,4 @@
 {{ end }}
     
 
+-->
