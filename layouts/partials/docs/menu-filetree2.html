@@ -1,3 +1,9 @@
+{{ range (where .Section.Pages "Params.menu" "==" true) }}
+<h2>level1</h2>
+{{end}}
+
+
+
 
 
 {{ $bookSection := default "docs" .Site.Params.BookSection  }}
