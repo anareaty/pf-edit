@@ -1,6 +1,7 @@
 baseURL: https://paperless-forest.ru
 languageCode: ru-ru
 DefaultContentLanguage: ru
+timezone: Asia/Baku
 
 # Book configuration
 disablePathToLower: true
