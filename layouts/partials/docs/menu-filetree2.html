@@ -34,7 +34,7 @@
 
 {{ $currentPage := .page.Site.GetPage (replace .currentPageLink "/" "")}}
 {{ $currentPageParent := $currentPage.Params.parent}}
-{{ $ancestor: = eq $currentPageParent .page.Params.filename}}
+{{ $ancestor := eq $currentPageParent .page.Params.filename}}
 
 
   {{ if .page.Params.collapse }}
