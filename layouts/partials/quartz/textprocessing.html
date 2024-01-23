@@ -71,7 +71,8 @@
 
 
 
-      {{ $linkContent := partial "quartz/popover-textprocessing" $curpage }}
+  <!--    {{ $linkContent := partial "quartz/popover-textprocessing" $curpage }} -->
+      {{ $linkContent := "" }}
       {{ $linkFileId := $curpage.File.UniqueID }}
    <!--   {{ $popover := printf "<div id=\"popover-%s\" class=\"pp\">%s</div>" $linkFileId $linkContent}} -->
 
@@ -80,7 +81,7 @@
 
 
 
--->
+
 
       {{$content = replace $content . $link}}
     <!--  {{$content = printf "%s%s" $content $popover}} -->
