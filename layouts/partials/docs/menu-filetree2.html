@@ -16,8 +16,11 @@
 {{ $parent := . }}
    
    <li>{{ .Params.title }}</li>
+
    <ul>
      {{ range $pages }} 
+     <li>{{$parentTitle}}</li>
+<li>{{.Params.parent}}</li>
      {{ if eq .Params.parent $parentTitle }}
        {{ template "section-children" $parent }}
      {{end}}
