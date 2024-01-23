@@ -14,7 +14,7 @@
 {{ $args := . }}
 {{ $pages := where .page.Site.RegularPages "Params.menu" "==" true }}
 {{ $parentName := .page.Params.filename }}
-   <li>{{.page.Params.title}}</li>
+  
    <li>{{ template "page-link" . }}</li>
    <ul>
      {{ range $pages }} 
@@ -29,11 +29,6 @@
 
 {{define "page-link"}}
 {{ $current := eq .page.Permalink .currentPage }}
-
-{{ if $current }}
-<div>Current</div>
-{{end}}
-
 
   {{ if .page.Params.collapse }}
     <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if $current }}checked{{ end }} />
