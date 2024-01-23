@@ -19,7 +19,7 @@
    <ul>
      {{ range $pages }} 
      {{ if eq .Params.parent $parentName }}
-       {{ template "section-children" (dict "page" . "currentPage" args.currentPage) }}
+       {{ template "section-children" (dict "page" . "currentPage" $args.currentPage) }}
      {{end}}
      {{end}}
    </ul>
