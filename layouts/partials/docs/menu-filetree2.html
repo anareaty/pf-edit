@@ -11,7 +11,8 @@
 </ul>
 
 {{ define "section-children" }}
-{{ $parentTitle = .Params.title }}
+{{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
+{{ $parentTitle := .Params.title }}
    
    <li>{{ .Params.title }}</li>
    <ul>
