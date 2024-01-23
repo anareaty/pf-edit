@@ -4,7 +4,7 @@
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
-    {{ template "section-children" (dict "page" . "currentPage" .Page) }}
+    {{ template "section-children" (dict "page" . "currentPage" .Page.Permalink) }}
   {{end}}
 {{end}}
 </ul>
