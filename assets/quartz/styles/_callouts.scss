@@ -1,8 +1,8 @@
 :root {
   --callout-summary: #00b0ff;
   --callout-summary-accent: #7fd7ff;
-  --callout-bug: rgba(var(--color-red-rgb), 0.5);
-  --callout-bug-accent: #ff7aa9;
+  --callout-bug: rgba(var(--color-red-rgb), 1);
+  --callout-bug-accent: rgba(var(--color-red-rgb), 0.2);
   --callout-danger: #ff1744;
   --callout-danger-accent: #ff8aa1;
   --callout-example: #7c4dff;
