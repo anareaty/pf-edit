@@ -35,6 +35,8 @@
 {{ $currentPage := .page.Site.GetPage .currentPageLink}}
 {{ $currentPageParent := $currentPage.Params.parent}}
 
+
+<div>{{.currentPageLink}}</div>
 <div>{{$currentPage}}</div>
 
   {{ if .page.Params.collapse }}
