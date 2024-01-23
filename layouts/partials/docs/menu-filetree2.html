@@ -2,11 +2,11 @@
 
 
 {{ range $pages }}
-  
+  {{if .Params.parent}}
   
     <h2>{{ .Params.title }}</h2>
 <h3>{{ .Params.parent }}</h3>
-  
+  {{end}}
 {{end}}
 
 
