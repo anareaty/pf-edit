@@ -15,7 +15,7 @@
 {{ $pages := where .page.Site.RegularPages "Params.menu" "==" true }}
 {{ $parentName := .page.Params.filename }}
   
-   <li>{{ template "page-link" . }}</li>
+   <li>{{ template "page-link" . }}
    <ul>
      {{ range $pages }} 
      {{ if eq .Params.parent $parentName }}
@@ -23,6 +23,7 @@
      {{end}}
      {{end}}
    </ul>
+     </li>
 {{end}}
 
 
