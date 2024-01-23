@@ -1,7 +1,7 @@
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
 {{ $rootPages := where $pages "Params.parent" "==" false }}
 
-{{ range $rootPages }}
+{{ range $pages }}
   
     <h2>level 1</h2>
   
