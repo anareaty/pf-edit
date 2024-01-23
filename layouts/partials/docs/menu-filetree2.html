@@ -1,6 +1,6 @@
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
 
-
+<ul>
 {{ range $pages }}
   {{if not .Params.parent}}
   
@@ -8,10 +8,18 @@
 
   {{end}}
 {{end}}
-
+</ul>
 
 {{ define "section-children" }}
-   <h2>{{ .Params.title }}</h2>
+{{ $parentTitle = .Params.title }}
+   
+   <li>{{ .Params.title }}</li>
+   <ul>
+     {{ range $pages "Params.parent" "=" parentTitle }}
+       {{ template "section-children" . }}
+     {{end}}
+   </ul>
+
 {{end}}
 
 
