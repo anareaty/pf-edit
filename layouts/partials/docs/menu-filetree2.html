@@ -30,7 +30,10 @@
 
 {{define "page-link"}}
 {{ $current := eq .page.RelPermalink .currentPageLink }}
-{{ $currentPage := .page.GetPage .currentPageLink}}
+
+
+{{ $currentPage := .page.Site.GetPage .currentPageLink}}
+{{ $currentPageParent := $currentPage.Params.parent}}
 
 <div>{{$currentPage}}</div>
 
