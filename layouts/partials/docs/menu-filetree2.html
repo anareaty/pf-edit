@@ -1,4 +1,4 @@
-{{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
+{{ $pages := where .Site.Pages "Params.menu" "==" true }}
 {{ $currentPageLink := .Page.RelPermalink}}
 <ul>
 {{ range $pages }}
@@ -13,7 +13,7 @@
 {{ define "section-children" }}
 
   {{ $args := . }}
-  {{ $pages := where .page.Site.RegularPages "Params.menu" "==" true }}
+  {{ $pages := where .page.Site.Pages "Params.menu" "==" true }}
   {{ $parentName := .page.Params.filename }}
   
    <li>{{ template "page-link" . }}
