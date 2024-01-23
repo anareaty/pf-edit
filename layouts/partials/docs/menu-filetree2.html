@@ -3,7 +3,7 @@
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
-    {{ template "section-children" . $pages $currentPage }}
+    {{ template "section-children" (dict page . currentPage .Page) }}
   {{end}}
 {{end}}
 </ul>
@@ -12,14 +12,14 @@
 
 {{ define "section-children" }}
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
-{{ $parentName := .Params.filename }}
-{{ $parent := . }}
-   <li>{{.Params.title}}</li>
-   <li>{{ template "page-link" . $currentPage}}</li>
+{{ $parentName := .page.Params.filename }}
+{{ $parent := .page }}
+   <li>{{.page.Params.title}}</li>
+   <li>{{ template "page-link" . }}</li>
    <ul>
      {{ range $pages }} 
      {{ if eq .Params.parent $parentName }}
-       {{ template "section-children" . }}
+       {{ template "section-children" (dict page . currentPage .currentPage) }}
      {{end}}
      {{end}}
    </ul>
@@ -28,8 +28,8 @@
 
 
 {{define "page-link"}}
-{{ $page := . }}
-{{ $current := eq $page $currentPage }}
+{{ $page := .page }}
+{{ $current := eq $page .currentPage }}
 
 {{ if $current }}
 <div>Current</div>
