@@ -1,4 +1,5 @@
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
+{{ $currentPage = .Page}}
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
@@ -28,7 +29,7 @@
 
 {{define "page-link"}}
 {{ $page := . }}
-{{ $current := eq $page .Page }}
+{{ $current := eq $page $currentPage }}
 
 {{ if $current }}
 <div>Current</div>
