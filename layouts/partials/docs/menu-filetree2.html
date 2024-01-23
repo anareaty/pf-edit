@@ -29,7 +29,7 @@
 
 {{define "page-link"}}
 {{ $page := .page }}
-{{ $current := eq $page $page }}
+{{ $current := true }}
 <div>{{$page}}</div>
 <div>{{.currentPage}}</div>
 {{ if $current }}
