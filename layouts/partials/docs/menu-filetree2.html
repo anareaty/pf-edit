@@ -2,7 +2,7 @@
 
 
 {{ range $pages }}
-  {{-if .Params.parent}}
+  {{- if .Params.parent}}
     {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
   
     <h2>{{ .Params.title }}</h2>
