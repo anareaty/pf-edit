@@ -2,9 +2,9 @@
   --callout-summary: #00b0ff;
   --callout-summary-accent: #7fd7ff;
   --callout-bug: rgba(var(--color-red-rgb), 1);
-  --callout-bug-accent: rgba(var(--color-red-rgb), 0.6);
-  --callout-danger: #ff1744;
-  --callout-danger-accent: #ff8aa1;
+  --callout-bug-accent: rgba(var(--color-red-rgb), 0.2);
+  --callout-danger: rgba(var(--color-red-rgb), 1);
+  --callout-danger-accent: rgba(var(--color-red-rgb), 0.2);
   --callout-example: #7c4dff;
   --callout-example-accent: #bda5ff;
   --callout-fail: #ff5252;
@@ -174,3 +174,5 @@ $svgs: map-merge($svgs, ($warning: url("data:image/svg+xml,%3Csvg aria-hidden='t
     }
   }
 }
+
+
