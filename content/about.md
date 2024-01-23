@@ -1,6 +1,5 @@
 ---
 date: 2023-09-09
-type: page
 cssclasses: []
 path: content
 filename: about
@@ -15,6 +14,7 @@ weight: 10
   - идея
 tags: 
 Блог: "[[Paperless Forest]]"
+Тип: "[[Публикации/Публикации]]"
 ---
 
 

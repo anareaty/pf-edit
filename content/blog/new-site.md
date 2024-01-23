@@ -1,6 +1,5 @@
 ---
 date: 2023-09-11
-type: page
 cssclasses: []
 path: content/blog
 filename: new-site
@@ -18,16 +17,17 @@ tags:
   - обновления
   - сайт
 Блог: "[[Paperless Forest]]"
+Тип: "[[Публикации/Публикации]]"
 ---
 
 
 Я сделала этот сайт для того, чтобы публиковать здесь свои идеи и заметки.
 
-Сайт сделан при помощи приложения [[../tech/obsidian/_index|Obsidian]] и плагина [Github Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher), с использованием шаблона [Hugo](https://gohugo.io/). В качестве шаблона я использовала тему [Amethyst](https://amethyst.bencuan.me/), но изрядно допилила её под себя.
+Сайт сделан при помощи приложения [[../_index|Obsidian]] и плагина [Github Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher), с использованием шаблона [Hugo](https://gohugo.io/). В качестве шаблона я использовала тему [Amethyst](https://amethyst.bencuan.me/), но изрядно допилила её под себя.
 
 **Что я изменила:**
 - [x] добавила ленту блога;
-- [x] добавила поддержку [[../tech/obsidian/custom-checkboxes|кастомных чекбоксов]];
+- [x] добавила поддержку [[../custom-checkboxes|кастомных чекбоксов]];
 - [x] убрала бэклинки и граф (потому что они глючат); 
 - [x] переписала стили;
 - [x] изменила работу некоторых метаданных;

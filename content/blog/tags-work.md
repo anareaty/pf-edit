@@ -1,6 +1,5 @@
 ---
 date: 2023-09-29
-type: page
 cssclasses: []
 path: content/blog
 filename: tags-work
@@ -18,6 +17,7 @@ tags:
   - тэги
   - обновления
 Блог: "[[Paperless Forest]]"
+Тип: "[[Публикации/Публикации]]"
 ---
 
 
