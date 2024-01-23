@@ -34,13 +34,13 @@ tags:
 
 Если в результате изменений вы потеряли какую-то ссылку, то вот перечень ссылок, которые изменились:
 
-- [[./pocketbook-collection-manager|pocketbook-collection-manager]]
-- [[./obsidian-quickadd-how-to-run-scripts|obsidian-quickadd-how-to-run-scripts]]
-- [[./how-to-reuse-dataviewjs-code|how-to-reuse-dataviewjs-code]]
-- [[./three-act-structure|three-act-structure]]
-- [[./sync-syncthing-without-internet|sync-syncthing-without-internet]]
+- [[./pocketbook-collection-manager|Менеджер коллекций для Покетбука]]
+- [[./obsidian-quickadd-how-to-run-scripts|Obsidian QuickAdd - как запускать скрипты]]
+- [[./how-to-reuse-dataviewjs-code|Как переиспользовать код с помощью dataviewjs]]
+- [[./three-act-structure|Трёхактная структура]]
+- [[./sync-syncthing-without-internet|Синхронизация через Syncthing без интернета]]
 - [[./obsidian|Obsidian]]
-- [[./custom-checkboxes|custom-checkboxes]]
-- [[./sidebar-images|sidebar-images]]
-- [[./Canvas-style-menu-settings|Canvas-style-menu-settings]]
+- [[./custom-checkboxes|Кастомные чекбоксы в Obsidian]]
+- [[./sidebar-images|Css для картинок в сайдбаре]]
+- [[./Canvas-style-menu-settings|Пресет настроек для плагина Canvas Style Menu]]
 
