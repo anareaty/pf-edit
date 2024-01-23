@@ -3,7 +3,7 @@
     {{ $pages := where .Site.RegularPages "Params.blog" "==" true }}
     {{ $pag := .Paginate ($pages) }}
 
-      {{ range $pag.Pages.ByDate.Reverse  }}
+      {{ range $pag.Pages.ByPublishDate.Reverse  }}
       {{ $image := .Params.cover_image }}
       {{ $tags := .Params.tags }}
      {{- partial "article-preview" . -}}
