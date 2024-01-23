@@ -1,6 +1,5 @@
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
 {{ $currentPage := .Page.Permalink}}
-<div>{{$currentPage}}</div>
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
@@ -29,14 +28,29 @@
 
 
 {{define "page-link"}}
-{{ $page := .page }}
-{{ $current := eq $page.Permalink .currentPage }}
+{{ $current := eq .page.Permalink .currentPage }}
 
-<div>{{$page.Permalink}}</div>
-<div>{{.currentPage}}</div>
 {{ if $current }}
 <div>Current</div>
 {{end}}
+
+
+  {{ if .page.Params.collapse }}
+    <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if $current }}checked{{ end }} />
+    <label for="section-{{ md5 .page }}" class="flex">
+      <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
+        {{- partial "docs/title" .page -}}
+      </a>
+    </label>
+  {{ else if .page.Content }}
+    <a href="{{ .page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
+      {{- partial "docs/title" .page -}}
+    </a>
+  {{ else }}
+    <span class="book-menu-title">{{- partial "docs/title" .page -}}</span>
+  {{ end }}
+
+
 {{end}}
 
 
