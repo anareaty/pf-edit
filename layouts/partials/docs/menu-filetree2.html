@@ -3,7 +3,7 @@
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
-    {{ template "section-children" . }}
+    {{ template "section-children" . $pages $currentPage }}
   {{end}}
 {{end}}
 </ul>
@@ -15,7 +15,7 @@
 {{ $parentName := .Params.filename }}
 {{ $parent := . }}
    <li>{{.Params.title}}</li>
-   <li>{{ template "page-link" . }}</li>
+   <li>{{ template "page-link" . $currentPage}}</li>
    <ul>
      {{ range $pages }} 
      {{ if eq .Params.parent $parentName }}
