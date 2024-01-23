@@ -34,13 +34,11 @@
 
 {{ $currentPage := .page.Site.GetPage (replace .currentPageLink "/" "")}}
 {{ $currentPageParent := $currentPage.Params.parent}}
+{{ $ancestor = eq $currentPageParent .page.Params.filename}}
 
-
-<div>{{.currentPageLink}}</div>
-<div>{{$currentPage}}</div>
 
   {{ if .page.Params.collapse }}
-    <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" {{ if $current }}checked{{ end }}/>
+    <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }}/>
     <label for="section-{{ md5 .page }}" class="flex">
       <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
         {{- partial "docs/title" .page -}}
