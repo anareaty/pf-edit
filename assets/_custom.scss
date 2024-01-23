@@ -631,7 +631,8 @@ input[data-task="@"]:checked {
 [saved-theme=light]  body {
     --callout-summary: #5d81ac;
     --callout-summary-accent: #81A1C1;
-    --callout-bug: #CD7575
+   /* --callout-bug: #CD7575 */
+    --callout-bug: rgba(var(--color-red-rgb), 0.5)
     --callout-bug-accent: #D4B1D8;
     --callout-danger: #CD7575
     --callout-danger-accent: #D4B1D8;
