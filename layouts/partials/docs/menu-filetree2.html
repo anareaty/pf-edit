@@ -17,7 +17,7 @@
    <li>{{ .Params.title }}</li>
    <ul>
      {{ range $pages }} 
-     {{ where eq .Params.parent $parentTitle }}
+     {{ if eq .Params.parent $parentTitle }}
        {{ template "section-children" . }}
      {{end}}
      {{end}}
