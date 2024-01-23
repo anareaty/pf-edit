@@ -32,7 +32,7 @@
 {{ $current := eq .page.RelPermalink .currentPageLink }}
 
 
-{{ $currentPage := .page.Site.GetPage .currentPageLink}}
+{{ $currentPage := .page.Site.GetPage "obsidian-quickadd-how-to-run-scripts"}}
 {{ $currentPageParent := $currentPage.Params.parent}}
 
 
