@@ -28,7 +28,7 @@
 
 {{define "page-link"}}
 {{ $page := . }}
-{{ $current := eq .CurrentPage .Page }}
+{{ $current := eq $page .Page }}
 
 {{ if $current }}
 <div>Current</div>
