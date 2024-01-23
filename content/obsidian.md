@@ -8,7 +8,7 @@ share: true
 menu: true
 blog: false
 toc: false
-collapse: false
+collapse: true
 weight: 10
 Статус:
   - идея
