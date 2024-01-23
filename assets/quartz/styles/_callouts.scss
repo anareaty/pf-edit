@@ -1,28 +1,28 @@
 :root {
-  --callout-summary: #00b0ff;
-  --callout-summary-accent: #7fd7ff;
+  --callout-summary: rgba(var(--color-cyan-rgb), 1);
+  --callout-summary-accent: rgba(var(--color-cyan-rgb), .2);
   --callout-bug: rgba(var(--color-red-rgb), 1);
   --callout-bug-accent: rgba(var(--color-red-rgb), 0.2);
   --callout-danger: rgba(var(--color-red-rgb), 1);
   --callout-danger-accent: rgba(var(--color-red-rgb), 0.2);
-  --callout-example: #7c4dff;
-  --callout-example-accent: #bda5ff;
-  --callout-fail: #ff5252;
-  --callout-fail-accent: #ffa8a8;
-  --callout-info: #00b8d4;
-  --callout-info-accent: #69ebff;
-  --callout-note: #448aff;
-  --callout-note-accent: #a1c4ff;
-  --callout-question: #64dd17;
-  --callout-question-accent: #b0f286;
-  --callout-quote: #9e9e9e;
-  --callout-quote-accent: #cecece;
-  --callout-done: #00c853;
-  --callout-done-accent: #63ffa4;
-  --callout-important: #00bfa5;
-  --callout-important-accent: #5fffe9;
-  --callout-warning: #ff9100;
-  --callout-warning-accent: #ffc87f;
+  --callout-example: rgba(var(--color-green-rgb), 1);
+  --callout-example-accent: rgba(var(--color-green-rgb), .2);
+  --callout-fail: rgba(var(--color-red-rgb), 1);
+  --callout-fail-accent: rgba(var(--color-red-rgb), .2);
+  --callout-info: rgba(var(--color-cyan-rgb), 1);
+  --callout-info-accent: rgba(var(--color-cyan-rgb), .2);
+  --callout-note: rgba(var(--color-blue-rgb), 1);
+  --callout-note-accent: rgba(var(--color-blue-rgb), .2);
+  --callout-question: rgba(var(--color-yellow-rgb), 1);
+  --callout-question-accent: rgba(var(--color-yellow-rgb), .2);
+  --callout-quote: rgba(var(--color-purple-rgb), 1);
+  --callout-quote-accent: rgba(var(--color-purple-rgb), .2);
+  --callout-done: rgba(var(--color-green-rgb), 1);
+  --callout-done-accent: rgba(var(--color-green-rgb), .2);
+  --callout-important: rgba(var(--color-red-rgb), 1);
+  --callout-important-accent: rgba(var(--color-red-rgb), .2);
+  --callout-warning: rgba(var(--color-orange-rgb), 1);
+  --callout-warning-accent: rgba(var(--color-orange-rgb), .2);
 }
 
 [saved-theme=dark] {
