@@ -3,7 +3,7 @@ date: 2023-05-26
 cssclasses:
   - hide-props-for-blog
 path: content
-Тип: "[[Публикации/Публикации]]"
+parent: obsidian
 filename: obsidian-quickadd-how-to-run-scripts
 title: Obsidian QuickAdd - как запускать скрипты
 share: true
@@ -12,6 +12,7 @@ blog: false
 toc: true
 collapse: false
 weight: 10
+Тип: "[[Публикации/Публикации]]"
 tags:
   - Obsidian
   - QuickAdd
