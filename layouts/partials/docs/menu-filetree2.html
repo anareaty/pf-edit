@@ -2,7 +2,7 @@
 
 
 {{ range $pages }}
-  {{with . Params.parent}}
+  {{where .Params}}
   
     <h2>level 1</h2>
   {{end}}
