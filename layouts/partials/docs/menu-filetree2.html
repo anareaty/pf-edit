@@ -1,5 +1,7 @@
 {{ range (where .Section.Pages "Params.menu" "==" true) }}
-<h2>level1</h2>
+  {{if .Params.parent}}
+    <h2>{{.Params.parent}}</h2>
+  {{end}}
 {{end}}
 
 
