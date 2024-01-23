@@ -2,7 +2,7 @@
 
 
 {{ range $pages }}
-  {{- if .Params.parent}}
+  {{if not .Params.parent}}
   
     {{ template "section-children" . }}
 
