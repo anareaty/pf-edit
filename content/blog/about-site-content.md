@@ -1,6 +1,6 @@
 ---
 date: 2023-09-27
-cssclasses: []
+cssclasses: 
 path: content/blog
 filename: about-site-content
 title: О содержании сайта
@@ -16,6 +16,8 @@ tags:
   - сайт
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 

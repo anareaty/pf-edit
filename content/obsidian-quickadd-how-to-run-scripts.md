@@ -18,6 +18,8 @@ tags:
   - QuickAdd
 Статус:
   - опубликовано
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 

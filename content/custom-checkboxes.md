@@ -18,6 +18,9 @@ tags:
   - checkboxes
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: obsidian
 ---
 
 

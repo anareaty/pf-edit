@@ -16,6 +16,9 @@ weight: 10
 tags:
   - css
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: obsidian
 ---
 
 

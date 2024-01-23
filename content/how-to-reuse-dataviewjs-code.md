@@ -19,6 +19,9 @@ tags:
 Тема:
   - "[[Картотека/Obsidian|Obsidian]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: obsidian
 ---
 
 

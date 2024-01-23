@@ -1,6 +1,6 @@
 ---
 date: 2023-09-09
-cssclasses: []
+cssclasses: 
 path: content
 filename: about
 title: Обо мне
@@ -15,6 +15,8 @@ weight: 10
 tags: 
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 

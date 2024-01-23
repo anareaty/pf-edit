@@ -20,6 +20,7 @@ tags:
   - plugins
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: obsidian
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 date: 2023-09-29
-cssclasses: []
+cssclasses: 
 path: content/blog
 filename: tags-work
 title: Теги теперь работают!
@@ -18,6 +18,8 @@ tags:
   - обновления
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 

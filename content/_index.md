@@ -1,6 +1,6 @@
 ---
 date: 2023-09-07
-cssclasses: []
+cssclasses: 
 path: content
 filename: _index
 title: Paperless forest
@@ -15,6 +15,8 @@ weight: 1
 tags: 
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 
@@ -33,7 +35,7 @@ tags:
 - 03.10.23 — [[./blog/new-domain|У сайта новый домен! 😎]]
 - 02.10.23 — [[./blog/news-02-10-23|Обновление сайта]]
 - 29.09.23 — [[./blog/tags-work|Теги теперь работают!]]
-- 27.09.23 — [[./blog/about-site-structure|О структуре сайта]]
 - 27.09.23 — [[./blog/about-site-content|О содержании сайта]]
+- 27.09.23 — [[./blog/about-site-structure|О структуре сайта]]
 
 

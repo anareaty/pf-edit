@@ -1,6 +1,6 @@
 ---
 date: 2023-09-11
-cssclasses: []
+cssclasses: 
 path: content/blog
 filename: new-site
 title: Новый сайт! 🎉
@@ -18,6 +18,8 @@ tags:
   - сайт
 Блог: "[[Paperless Forest]]"
 Тип: "[[Публикации/Публикации]]"
+Ресурс:
+  - "[[Paperless Forest|🌱 Paperless Forest]]"
 ---
 
 
