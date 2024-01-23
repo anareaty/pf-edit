@@ -1,5 +1,5 @@
 {{ $pages := where .Site.RegularPages "Params.menu" "==" true }}
-{{ $currentPage = .Page}}
+{{ $currentPage := .Page}}
 <ul>
 {{ range $pages }}
   {{if not .Params.parent}}
