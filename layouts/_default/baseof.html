@@ -16,11 +16,21 @@
 
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <main class="main-container">
+
+
+    <!--
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
       </div>
     </aside>
+    
+    -->
+
+    {{ partial "main-menu" . }}
+
+
+    
     <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
 
 
