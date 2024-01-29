@@ -33,7 +33,8 @@
 {{$fixedContent := replace $fixedContent `..//` `../`}}
 
 
-
+<div>re {{$re}}</div>
+<div>fixedContent {{$fixedContent}}</div>
 
 
    {{ if and (findRE $re $fixedContent) (not (eq $re .File.BaseFileName)) }}
