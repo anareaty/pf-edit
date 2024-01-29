@@ -8,9 +8,12 @@
 </head>
 
   
-{{ partial "bare-header" . }}
-{{ partial "quartz/search" . }}
+
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+  {{ partial "bare-header" . }}
+  {{ partial "quartz/search" . }}
+
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <main class="main-container">
     <aside class="book-menu">
