@@ -60,17 +60,13 @@
   {{ partial "docs/languages" . }}
 {{ end }}
 
-{{ partial "docs/inject/menu-before" . }}
 {{ partial "docs/menu-hugo" .Site.Menus.before }}
 
-{{ if .Site.Params.BookMenuBundle }}
-  {{ partial "docs/menu-bundle" . }}
-{{ else }}
 
   
 
-  {{ partial "docs/menu-filetree2" . }}
-{{ end }}
+{{ partial "docs/menu-filetree2" . }}
+
 
 {{ partial "docs/menu-hugo" .Site.Menus.after }}
 
