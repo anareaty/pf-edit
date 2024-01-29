@@ -11,7 +11,10 @@
   
   <main class="main-container">
     {{ partial "main-menu" . }}
-    {{ partial "main-page" . }}
+    <div class="book-page container">
+      {{ partial "main-content" . }}
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
     {{ partial "main-toc" . }}
   </main>
   
