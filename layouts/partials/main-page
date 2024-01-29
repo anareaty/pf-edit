@@ -1,0 +1,46 @@
+<div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
+      
+  {{ template "main" . }} <!-- Page Content -->
+  {{ template "comments" . }} <!-- Comments block -->
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+
+</div>
+
+
+
+{{ define "comments" }}
+  <div class="book-comments">
+    {{- partial "docs/comments" . -}}
+  </div>
+{{ end }}
+
+
+
+{{ define "main" }}
+  <article class="markdown">
+    <h1 class="title">{{ partial "docs/title.html" . }}</h1>
+    {{ partial "docs/post-meta" . }}
+    <div class="content">{{partial "quartz/textprocessing" . }}</div>
+
+    {{ partial "quartz/backlinks2" . }}
+
+    <p><a name="giscus"></a></p>
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="anareaty/paperless-forest"
+        data-repo-id="R_kgDOKa1X3w"
+        data-category="General"
+        data-category-id="DIC_kwDOKa1X384CZz3C"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="https://paperless-forest.ru/giscus/giscus-theme.css"
+        data-lang="ru"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </article>
+{{ end }}
