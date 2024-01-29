@@ -1,0 +1,53 @@
+{{ $pages := where .Site.Pages "Params.menu" "==" true }}
+{{ $currentPageLink := .Page.RelPermalink}}
+<ul>
+{{ range $pages }}
+  {{if not .Params.parent}}
+    {{ template "section-children" (dict "page" . "currentPageLink" $currentPageLink) }}
+  {{end}}
+{{end}}
+</ul>
+
+
+
+{{ define "section-children" }}
+
+  {{ $args := . }}
+  {{ $pages := where .page.Site.Pages "Params.menu" "==" true }}
+  {{ $parentName := .page.Params.filename }}
+  
+   <li>{{ template "page-link" . }}
+   <ul>
+     {{ range $pages }} 
+     {{ if eq .Params.parent $parentName }}
+       {{ template "section-children" (dict "page" . "currentPageLink" $args.currentPageLink) }}
+     {{end}}
+     {{end}}
+   </ul>
+     </li>
+{{end}}
+
+
+
+{{define "page-link"}}
+
+  {{ $current := eq .page.RelPermalink .currentPageLink }}
+  {{ $currentPage := .page.Site.GetPage (replace .currentPageLink "/" "")}}
+  {{ $currentPageParent := $currentPage.Params.parent}}
+  {{ $ancestor := eq $currentPageParent .page.Params.filename}}
+
+  {{ if .page.Params.collapse }}
+    <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }}/>
+    <label for="section-{{ md5 .page }}" class="flex">
+      <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
+        {{- partial "docs/title" .page -}}
+      </a>
+    </label>
+  {{ else if .page.Content }}
+    <a href="{{ .page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
+      {{- partial "docs/title" .page -}}
+    </a>
+  {{ else }}
+    <span class="book-menu-title">{{- partial "docs/title" .page -}}</span>
+  {{ end }}
+{{end}}
