@@ -55,21 +55,7 @@
   {{ partial "docs/menu" . }}
 {{ end }}
 
-{{ define "header" }}
-  {{ partial "docs/header" . }}
 
-  {{ if default true (default .Site.Params.toc .Params.toc) }}
-  <aside class="hidden clearfix">
-    {{ template "toc" . }}
-  </aside>
-  {{ end }}
-
-
-{{ end }}
-
-{{ define "footer" }}
-  {{ partial "docs/footer" . }}
-{{ end }}
 
 {{ define "comments" }}
 
@@ -99,13 +85,7 @@
 
 <p><a name="giscus"></a></p>
     
-<!--
 
-    {{ partial "quartz/footer" .}}
--->
-
-    
-    {{/*  {{- .Content -}}  */}}
 
 
 
