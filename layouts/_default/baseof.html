@@ -11,7 +11,11 @@
   
   <main class="main-container">
     {{ partial "main-menu" . }}
-    {{ partial "main-page" . }}
+    <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
+      {{ partial "main-content" . }} <!-- Page Content -->
+      {{ partial "comments" . }} <!-- Comments block -->
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
     {{ partial "main-toc" . }}
   </main>
   
