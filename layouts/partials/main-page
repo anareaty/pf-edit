@@ -8,11 +8,6 @@
 
 
 
-{{ define "comments" }}
-  <div class="book-comments">
-    {{- partial "docs/comments" . -}}
-  </div>
-{{ end }}
 
 
 
@@ -23,7 +18,13 @@
     <div class="content">{{partial "quartz/textprocessing" . }}</div>
 
     {{ partial "quartz/backlinks2" . }}
+  </article>
+{{ end }}
 
+
+
+{{ define "comments" }}
+  <div class="book-comments">
     <p><a name="giscus"></a></p>
     
     <script src="https://giscus.app/client.js"
@@ -42,5 +43,5 @@
         crossorigin="anonymous"
         async>
     </script>
-  </article>
+  </div>
 {{ end }}
