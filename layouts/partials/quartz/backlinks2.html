@@ -7,7 +7,7 @@
 
 {{ $re := printf "%s%s%s" `\[\[../` $dir $.File.BaseFileName }}
 
-
+{{ $re = replace $re `\[\[..//` `\[\[../`}}
 
 {{if eq $re `\[\[..//_index`}}
   {{$re = `\[\[../_index`}}
