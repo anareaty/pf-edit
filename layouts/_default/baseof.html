@@ -20,23 +20,7 @@
 
 
     
-    <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
-
-
-    
-      {{ template "main" . }} <!-- Page Content -->
-
-
-      
-
-
-
-      
-      
-      {{ template "comments" . }} <!-- Comments block -->
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
+    {{ partial "main-page" . }}
 
     
     {{ partial "main-toc" . }}
