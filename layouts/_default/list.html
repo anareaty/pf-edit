@@ -1,1 +1,19 @@
-{{ define "dummy" }}{{ end }}
+<!DOCTYPE html>
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+{{ partial "main-head" . }}
+
+<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+  {{ partial "bare-header" . }}
+  {{ partial "quartz/search" . }}
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  
+  <main class="main-container">
+    {{ partial "main-menu" . }}
+    {{ partial "main-page" . }}
+    {{ partial "main-toc" . }}
+  </main>
+  
+</body>
+</html>
