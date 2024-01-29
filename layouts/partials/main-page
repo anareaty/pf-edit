@@ -1,7 +1,7 @@
 <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
       
   {{ partial "main-content" . }} <!-- Page Content -->
-  {{ template "comments" . }} <!-- Comments block -->
+  {{ partial "comments" . }} <!-- Comments block -->
   <label for="menu-control" class="hidden book-menu-overlay"></label>
 
 </div>
