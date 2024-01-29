@@ -1,7 +1,7 @@
 {{ if default true (default .Site.Params.toc .Params.toc) }}
     <aside class="book-toc">
       <div class="book-toc-content">
-        {{ partial "docs/toc" . }}
+        {{ .TableOfContents }}
       </div>
     </aside>
 {{ end }}
